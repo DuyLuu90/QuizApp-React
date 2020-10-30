@@ -1,0 +1,54 @@
+.js-quiz, .js-question, .alertMessage{
+    width: 90%;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+}
+.js-quiz  {
+    border-style: solid;
+    border-width: thin;  
+}
+.js-quiz h1{
+    color:  rgb(11, 11, 179);
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.js-quiz li{
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(11, 11, 179); color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.js-quiz li:hover {
+    background-color: orangered;
+    color: black;
+}
+.js-quiz button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.control a {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+.control div{
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(230, 156, 20)
+}
+#quiz-info{
+    width: 250px;
+}
+#quiz-final{
+    width: 180px;
+}

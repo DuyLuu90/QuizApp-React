@@ -41,8 +41,8 @@ export default class NavBar extends Component{
         return (
             <nav className='app_nav'>
                 <h1>
-                    <Link to='/'aria-label='home-page'><FontAwesomeIcon className="nav_icon" icon='code'/>
-                        {' '}{' '}React-Boilerplate
+                    <Link to='/'aria-label='home-page'>
+                        {' '}{' '}Trivia Quizzes
                     </Link>
                 </h1>
                 <div className='menu'>

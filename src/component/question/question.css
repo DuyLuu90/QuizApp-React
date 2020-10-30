@@ -1,0 +1,45 @@
+.js-question {
+    color: white;
+    background-color: darkslategray;
+    border-radius: 15px;
+}
+.js-question h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:gold;
+}
+.option {
+    font-size: 90%;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    border-width: 5px;
+}
+.option:hover {
+    background-color: orangered;
+}
+.option input {
+    margin-right: 5px;
+}
+.js-alert input {
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    border-style: none;
+}
+.js-alert input:hover{
+    background-color: red;
+    color: white
+}
+.alertMessage{
+    background-color: black;
+}
+.green{
+    color: rgb(14, 202, 14)
+}
+.red{
+    color: rgb(243, 38, 38);
+}
+.yellow{
+    color: yellow;
+}
