@@ -1,19 +1,27 @@
-# Mirroring a repository
+# Trivia game with React
 
-## Open Git Bash.
+We love to learn and have fun and what better way to do that than to play a round of trivia. 
 
-## Create a bare clone of the repository.
-$ git clone --bare https://github.com/exampleuser/old-repository.git
+This app was built using React. For more information about React, please visit https://reactjs.org/
 
-## Mirror-push to the new repository.
-$ cd old-repository.git
-$ git push --mirror https://github.com/exampleuser/new-repository.git
+## Instructions:
 
-## Remove the temporary local repository you created earlier.
-$ cd ..
-$ rm -rf old-repository.git
+* A round of trivia has 10 questions
+* All questions are multiple-choice questions
+* After a user has submitted their answer, the correct answer will be revealed, and their score will be updated.
+* User has to submit the answer in order to move to the next question.
+* At the end of the round, user will see their final score, and be asked to retake the quiz, or exit (go back to the home page)
 
-## Reference:
-https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository 
+If you're ready, let [PLAY](https://duyluu90.github.io/QuizApp_jQuery/) now!
 
+## Technology:
 
+* HTML5
+* JavaScript
+* CSS
+
+## Learn more:
+
+[Porfolio](https://dluu-developer.vercel.app/)
+[LinkedIn](https://www.linkedin.com/in/luuduy90/)
+[GitHub](https://github.com/DuyLuu90)

@@ -21,12 +21,20 @@ export default class Question extends Component {
             color: ''
         }
     }
-    componentDidMount(){
+    shuffleOptions=()=>{
         const {incorrect,correct}= this.props.item
         const array= incorrect.slice()
         array.push(correct)
         helpers.shuffleArray(array)
         this.setState({options: array})
+    }
+    componentDidMount(){
+        this.shuffleOptions()
+    }
+    componentDidUpdate(prevProps){
+        if(this.props.item !== prevProps.item) {
+            this.shuffleOptions()
+        }
     }
     onChange= e=>{
         this.setState({answer: e.target.value})

@@ -18,16 +18,19 @@ export default class QuizPage extends Component {
     }
     componentDidMount(){
         helpers.shuffleArray(quizBank)
-        const array= quizBank.slice(0,5)
+        const array= quizBank.slice(0,10)
         this.setState({quizBank: array})
     }
     updateQuestion=()=>{
-        if (this.state.currentQuestion<quizBank.length){
-            this.setState({currentQuestion: this.state.currentQuestion+1})
-        } 
-        else {
+        const {currentQuestion,quizBank}= this.state
+        console.log(quizBank.length)
+        if (currentQuestion+1 === quizBank.length){
             this.setState({displayFinal: true})
         }
+        else {
+            this.setState({currentQuestion: currentQuestion+1})
+        } 
+    
     }
     updateScore=()=>{
         this.setState({score: this.state.score+1})
@@ -49,6 +52,7 @@ export default class QuizPage extends Component {
             </div>
         )
     }
+    /*
     renderQuestions(){
         const questions= this.state.quizBank.map((question,i)=>
             <Question key={i}item={question} 
@@ -56,7 +60,7 @@ export default class QuizPage extends Component {
                 updateScore={this.updateScore}
             />)
         return questions;
-    }
+    }*/
     renderQuestion(){
         const {currentQuestion,score,quizBank}= this.state
         const question= quizBank[currentQuestion]
@@ -86,8 +90,8 @@ export default class QuizPage extends Component {
                     <p> You have completed your quiz. Your score is <strong>{score}/10</strong>. What would you like to do next? </p>
                 </div>
                 <div className='control' id='quiz-final'>
-                    <Link to='/'aria-label='home-page'>EXIT</Link>
-                    <Link to='/quiz'aria-label='quiz-page'>RETAKE</Link>
+                    <Link to='/' aria-label='home-page'>EXIT</Link>
+                    <Link to='/quiz' aria-label='quiz-page' onClick={()=>window.location.reload(false)}>RETAKE</Link>
                 </div>
             </div>
         )
@@ -96,14 +100,17 @@ export default class QuizPage extends Component {
     render(){
         const {displayInstruction,displayFinal}= this.state
         const instruction= this.renderInstructions()
-        const questions= this.renderQuestion()
+        const questions= this.renderQuestion() 
         const final= this.renderFinalScreen()
+        /*
         const html= (displayInstruction)? instruction
                     : (displayFinal)? final
-                    : questions
+                    : questions*/
         return(
             <div>
-                {html}
+                {displayInstruction && instruction}
+                {!displayFinal && !displayInstruction && questions}
+                {displayFinal && final}
             </div> 
         )
     }
