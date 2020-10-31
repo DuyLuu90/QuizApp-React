@@ -2,7 +2,6 @@ import React from 'react';
 import TokenService from '../../../services/TokenService';
 import AuthHelperService from '../../../services/AuthHelperService';
 import {GeneralApiServices} from '../../../services/api-service'
-import { Link } from 'react-router-dom';
 import '../form-style.css'
 
 export default class LoginForm extends React.Component {
@@ -121,25 +120,26 @@ export default class LoginForm extends React.Component {
 				</div>
 				
 				<div className="displayPassword">
-					<input type="checkbox" id="togglePassword"
-						onClick={() => {
-							const password = document.getElementById('password');
-							if (password.type === 'password') password.type = 'text';
-							else password.type = 'password';
-						}}
-					/>
+					<div className='checkedInput'>
+						<input type="checkbox" id="togglePassword" 
+							onClick={() => {
+								const password = document.getElementById('password');
+								if (password.type === 'password') password.type = 'text';
+								else password.type = 'password';
+							}}
+						/>
+					</div>
+					
 					<label htmlFor="togglePassword">show password</label>
 				</div>
 				<div className="form_help">
-					<span onClick={this.handleForgotUsernameClicked}>Forgot username</span>
-					{' | '}
-					<span onClick={this.handleForgotPasswordClicked}>Forgot password</span>
-					{' | '}
-					<Link to={'/register'}>Register</Link>
+					<div onClick={this.handleForgotUsernameClicked}>Forgot username</div>
+					<div onClick={this.handleForgotPasswordClicked}>Forgot password</div>
 				</div>
 				<div className="form_control">
 					<button type="submit">Login</button>
 				</div>
+				
 			</form>
 		);
 	}

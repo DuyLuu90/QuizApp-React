@@ -1,7 +1,7 @@
 import React from 'react';
 import AuthHelperService from '../../../services/AuthHelperService'
 import {GeneralApiServices} from '../../../services/api-service'
-import {validateName,validatePassword,validateUsername, ValidationError,BiometricComponent} from '../form-helpers'
+import {validateName,validatePassword,validateUsername, ValidationError} from '../form-helpers'
 import '../form-style.css'
 
 export default class RegForm extends React.Component {
@@ -107,7 +107,7 @@ export default class RegForm extends React.Component {
                 </div>
                 {name.touch && <ValidationError message={nameError}/>}
                 <div className='reg_input'>
-                    <label htmlFor="username">Email/Username</label>
+                    <label htmlFor="username">Username</label>
                     <input type="text" name='user_name' id='user_name' onChange={this.onChange} />
                 </div>
                 {user_name.touch && <ValidationError message={usernameError} />}
@@ -116,7 +116,6 @@ export default class RegForm extends React.Component {
                     <input type="password" name='password' id='password' onChange={this.onChange} autoComplete="off"/>
                 </div>
                 {password.touch && <ValidationError message={passwordError}/>}
-                <BiometricComponent />
                 <div className='reg_input'>
                     <label htmlFor="gender">Gender</label>
                     <select id="gender" name="gender">

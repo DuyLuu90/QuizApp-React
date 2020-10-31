@@ -1,6 +1,6 @@
 form {
     margin: 25px auto;
-    width: 75%;
+    width: 95%;
     max-width: 700px;
 }
 
@@ -12,15 +12,14 @@ form h1, form h2 {
 form input{
     padding:5px 10px;
 }
-
 .displayPassword {
 	color: gray;
-	font-size: 15px;
-	display: flex;
+    font-size: 15px;
+    display: flex;
 }
-.displayPassword input {
-	width: 15px;
-	margin-right: 10px;
+.checkedInput {
+    width: 18px;
+    margin-right: 10px;
 }
 
 .form_control {
@@ -98,20 +97,30 @@ form input{
 	padding: 10px;
 }
 
-.LoginForm .form_help {
+.LoginForm  {
 	display: flex;
 	align-items: center;
 	font-size: 15px;
 }
-.form_help span, .form_help a {
-	margin: 5px;
-	color: blue;
-}
-.form_help span:hover, .form_help a:hover {
-	cursor: pointer;
-	color: orange;
-}
+
 .retrieve-info .form_control {
 	margin-top: 15px;
+}
+.form_help div {
+    padding: 5px;
+    background-color: rgb(197, 130, 5);
+    margin: 10px auto;
+    width: 160px;
+    color: white;
+}
+.form_help div:hover{
+    background-color: rgb(2, 83, 2);
+    cursor: pointer;
+}
+@media screen and (min-width: 600px){
+    .form_help{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 

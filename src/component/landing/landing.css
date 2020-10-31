@@ -7,10 +7,10 @@
     margin: 10px auto;
 }
 #landing img{
-    width: 90%;
-    max-width: 400px;
+    
+    width: 150px;
     height: auto;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 #landing-message{
     font-style: italic;
@@ -21,21 +21,17 @@
     border-style: solid;
     border-width: thin;
     text-align: left;
-    background-color: rgb(189, 176, 176);
+    background-color:  rgba(224, 220, 220, 0.767);
 }
-#landing-nav{
+.control a {
     margin: 15px auto;
-    padding: 10px;
     width: 80px;
     background-color: black;
+    color: rgb(88, 168, 233);
     text-align: center; 
 }
-#landing-nav:hover{
+.control a:hover{
     background-color: red;
-}
-#landing-nav a {
-    color: rgb(88, 168, 233);
-}
-#landing-nav a:hover{
     color: white;
 }
+

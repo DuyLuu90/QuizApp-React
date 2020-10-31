@@ -2,12 +2,14 @@
     color: white;
     background-color: darkslategray;
     border-radius: 15px;
+    margin-top: 30px;
 }
 .js-question h1 {
     font-size: 18px;
     margin-bottom: 15px;
     color:gold;
 }
+
 .option {
     font-size: 90%;
     padding: 5px;
@@ -23,13 +25,13 @@
 }
 .js-alert input {
     padding: 10px;
-    background-color: orange;
-    color: black;
+    background-color: rgb(4, 4, 133);
+    color: white;
     border-style: none;
 }
 .js-alert input:hover{
     background-color: red;
-    color: white
+    cursor: pointer;
 }
 .alertMessage{
     background-color: black;
