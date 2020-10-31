@@ -16,6 +16,7 @@
     font-style: italic;
     width: 60%;
     min-width: 260px;
+    max-width: 600px;
     margin: 10px auto;
     padding: 10px;
     border-style: solid;
