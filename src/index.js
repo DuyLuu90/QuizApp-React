@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter}  from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-
+import 'semantic-ui-css/semantic.min.css'
+import UserConfirmation from '../src/component/question/UserConfirmation'
 import App from './App';
 
 import {
@@ -52,6 +53,7 @@ library.add(
 )
 
 ReactDOM.render(
-<BrowserRouter>
+<BrowserRouter getUserConfirmation={(message, callback) =>  
+      UserConfirmation(message, callback)}>
   <App/>
 </BrowserRouter>,document.getElementById('root'));

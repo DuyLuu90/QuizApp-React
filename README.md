@@ -16,6 +16,7 @@ If you're ready, let [PLAY](https://quiz-app-react-three.vercel.app/) now!
 
 * All questions and options are randomly ordered. It's very unlikely that 2 players work on the same set of questions at the same time. 
 * After a user has submitted his/her answer, the correct answer will be revealed, and his/her score will be updated.
+* While taking the quiz, if users navigate away or close the browser tab, they will be prompted to confirm if they really want to leave.
 * At the end of the round, user will see his/her final score, and be asked to retake the quiz, or exit (go back to the home page)
 
 ## Future development:

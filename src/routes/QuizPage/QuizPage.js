@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Prompt} from 'react-router-dom'
 import './QuizPage.css'
 import Question from '../../component/question/question'
 import {quizBank} from '../../assets/QuizBank'
@@ -13,7 +14,8 @@ export default class QuizPage extends Component {
         displayFinal: false,
         quizBank:[],
         currentQuestion:0,
-        score:0
+        score:0,
+        playNow: false,
     }
     componentDidMount(){
         helpers.shuffleArray(quizBank)
@@ -24,7 +26,9 @@ export default class QuizPage extends Component {
         const {currentQuestion,quizBank}= this.state
         console.log(quizBank.length)
         if (currentQuestion+1 === quizBank.length){
-            this.setState({displayFinal: true})
+            this.setState({
+                playNow: false,
+                displayFinal: true})
         }
         else {
             this.setState({currentQuestion: currentQuestion+1})
@@ -32,7 +36,15 @@ export default class QuizPage extends Component {
     }
     updateScore=()=>this.setState({score: this.state.score+1})
     
-    playNow=()=>this.setState({displayInstruction: false})
+    playNow=()=>this.setState({
+        playNow: true,
+        displayInstruction: false})
+
+    renderPrompMessage(){
+        return(
+            <Prompt message='Your quiz has'/>
+        )
+    }
     
     renderInstructions(){
         return(
@@ -95,6 +107,15 @@ export default class QuizPage extends Component {
                     : displayFinal        ? final
                     : questions
         
-        return html
+        return (
+            <div>
+                <Prompt 
+                    when={this.state.playNow}
+                    message={JSON.stringify({
+                        content:'You have not finished your quiz. Are you sure you want to leave?'
+                    })}/>
+                {html}
+            </div>
+        )
     }
 }
