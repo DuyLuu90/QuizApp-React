@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test on Quiz Page to prevent unexpected change 1`] = `
+<div
+  className="js-quiz"
+>
+  <h1>
+    INSTRUCTIONS
+  </h1>
+  <ul>
+    <li>
+      A round of trivia contains 10 multiple-choice questions
+    </li>
+    <li>
+      After submitting your answer,the correct answer will be revealed, and your score will be updated
+    </li>
+    <li>
+      Submit the answer in order to move to the next question. 
+    </li>
+    <li>
+      At the end of the round, you will see your final score. That's very simple. Have fun and good luck! 
+    </li>
+  </ul>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    PLAY NOW
+  </button>
+</div>
+`;

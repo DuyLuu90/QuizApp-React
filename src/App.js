@@ -4,14 +4,16 @@ import TokenService from '../src/services/TokenService'
 import {GeneralApiServices} from '../src/services/api-service'
 import './app-style.css';
 //ROUTES:
-import QuizPage from './routes/Quiz/QuizPage'
+import LandingPage from './routes/LandingPage/landingpage'
+import QuizPage from './routes/QuizPage/QuizPage'
+import NotFoundPage from './routes/NotFoundPage/notfoundpage';
+
 //COMPONENTS:
-import NotFoundPage from './component/notfoundpage/notfoundpage';
 import NavBar from './component/app_nav/navBar';
 import Footer from './component/app_footer/footer';
 import LoginForm from './component/forms/loginform/loginform'
 import RegForm from './component/forms/regForm/regForm'
-import LandingPage from './component/landing/landingpage'
+
 
 export default class App extends Component {
   constructor() {
