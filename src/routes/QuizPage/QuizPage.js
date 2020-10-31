@@ -40,11 +40,7 @@ export default class QuizPage extends Component {
         playNow: true,
         displayInstruction: false})
 
-    renderPrompMessage(){
-        return(
-            <Prompt message='Your quiz has'/>
-        )
-    }
+    
     
     renderInstructions(){
         return(
