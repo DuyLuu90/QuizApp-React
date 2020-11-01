@@ -11,11 +11,11 @@ This client-side application using the popular JavaScript library, React. For mo
 
 ## Key Terms:
 
-* *React*: Expressions, props, defaultProps,callback props, composition, state, React life-cycle(such as render, componentDidMount, componentDidUpdate), event listeners, bind, conditional rendering, React Router(Prompt,Link, Switch,Route), controlled component
-* *Test*: smoke test, snapshot test, unit testing, integration testing 
-* *Algorithm*: Array, Hash Map, Stack(push method)
-* *Best practices*: DRY(Don't Repeat Yourself), SOC(Separation of Concerns)
-* *Others*: setInterval, conditional tenary operator, JSON parser, loops, obj destructuring, Dev Tools(Lighthouse)
+* **React**: Expressions, props, defaultProps,callback props, composition, state, React life-cycle(such as render, componentDidMount, componentDidUpdate), event listeners, bind, conditional rendering, React Router(Prompt,Link, Switch,Route), controlled component
+* **Test**: smoke test, snapshot test, unit testing, integration testing 
+* **Algorithm**: Array, Hash Map, Stack(push method)
+* **Best practices**: DRY(Don't Repeat Yourself), SOC(Separation of Concerns)
+* **Others**: setInterval, conditional ternary operator, JSON parser, loops, obj destructuring, Dev Tools(Lighthouse)
 
 ## Instructions:
 
@@ -42,6 +42,6 @@ Note: we will need a full-stack app (front-end,back-end) for these features.
 
 ## Learn more:
 
-* [Porfolio](https://dluu-developer.vercel.app/)
+* [Portfolio](https://dluu-developer.vercel.app/)
 * [LinkedIn](https://www.linkedin.com/in/luuduy90/)
 * [GitHub](https://github.com/DuyLuu90)
