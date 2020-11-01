@@ -58,20 +58,25 @@ export default class Question extends Component {
             displayAlert: true
         })
     }
+    reset=()=>this.setState({
+        answer:'',
+        displayAlert:false
+    })
     onOkClick= e=>{
         const {color}= this.state.alert
         const {updateQuestion,updateScore}= this.props
+        this.setState({answer:''})
         if (color==='green'){
             updateScore();
             updateQuestion();
-            this.setState({displayAlert: false})
+            this.reset()
         }
         else if (color==='red'){
             updateQuestion();
-            this.setState({displayAlert: false})
+            this.reset()
         }
         else {
-            this.setState({displayAlert: false})
+            this.reset()
         }
         
     }
