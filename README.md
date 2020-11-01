@@ -2,11 +2,11 @@
 
 We love to learn and have fun and what better way to do that than to play a round of trivia. 
 
-This client-side application using the popular JavaScript library, React. For more information about React, please visit https://reactjs.org/
+This client-side application uses the popular JavaScript library, React. If you prefer to use jQuery, please check out this [repository](https://github.com/DuyLuu90/QuizApp_jQuery). 
 
 ## Technology:
 
-* React
+* [React](https://reactjs.org/)
 * HTML5, JavaScript, CSS3
 
 ## Key Terms:
