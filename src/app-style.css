@@ -5,12 +5,13 @@
   overflow-x: hidden;
   text-align: center;
 }
+.App{
+  position: relative;
+  min-height: 100vh;
+}
 .App_main {
-  min-height: 80vh;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  margin: 100px auto 0px auto;
+  padding: 20px 20px 75px 20px;
 }
 button {
   background-color: red;
