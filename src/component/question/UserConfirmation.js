@@ -4,7 +4,7 @@ import { Confirm } from 'semantic-ui-react'
 
 
 const UserConfirmation=(message,callback)=>{
-
+    
     const container= document.createElement("div")
     container.setAttribute("custom-confirmation-navigation", "");
     document.body.appendChild(container);
@@ -24,7 +24,8 @@ const UserConfirmation=(message,callback)=>{
             content= {textObj.content}
             onCancel= {()=>closeModal(false)}
             onConfirm={()=>closeModal(true)}
-        />,container)  
+        />,container) 
+    
 }
 
 export default UserConfirmation

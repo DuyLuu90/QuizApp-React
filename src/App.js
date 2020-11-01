@@ -28,9 +28,9 @@ export default class App extends Component {
   }
   componentDidMount(){
     const authToken= TokenService.getAuthToken()
-    if (authToken) {
-      this.handleLoginSuccess()
-    }
+      if (authToken) {
+        this.handleLoginSuccess()
+      }
   }
 
   handleLoginSuccess = ()=>{

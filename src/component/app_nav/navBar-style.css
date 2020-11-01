@@ -13,9 +13,11 @@
     color: white;
     overflow: hidden;
 }
-.app_nav h1 {
+.app_home {
     text-align: left;
     width: 60% ;
+    font-size: 22px;
+    margin-bottom: 0px;
 }
 
 .dropdown {
@@ -42,19 +44,14 @@
 .app_nav .menu {
     display: none;
 }
-/*
-.Header-not-logged-in, .Header-logged-in {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    
+
+@media screen and (min-width: 400px){
+    .app_home{
+        font-size: 30px;
+    }
+
 }
-.Header-logged-in a:nth-child(1) {
-    color: rgb(243, 113, 113);
-}
-.Header-logged-in a:nth-child(2) {
-    color: greenyellow
-}*/
+
 @media screen and (min-width: 815px) {
     .app_nav .menu  {
         display: flex;

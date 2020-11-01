@@ -48,3 +48,14 @@
 #quiz-final{
     width: 180px;
 }
+.timer {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center; align-items: center;
+    padding: 5px;
+    margin: 0px auto 20px auto;
+    border: solid;
+    border-radius: 50%;
+    font-weight: bold;
+}

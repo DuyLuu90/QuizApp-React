@@ -40,9 +40,10 @@ export default class NavBar extends Component{
         const nav= (this.props.token.hasAuthToken)? this.renderLogoutLink(): this.renderLoginLink()
         return (
             <nav className='app_nav'>
-                <h1>
-                    <Link to='/'aria-label='home-page'>
-                        {' '}{' '}Trivia Quizzes
+
+                <h1 className='app_home'>
+                    <Link to='/'aria-label='home-page' >
+                        Trivia Quizzes
                     </Link>
                 </h1>
                 <div className='menu'>
